@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>08</title>
+
+    <style>
+        html, body {
+            height: 100%;
+            margin: 40px;
+            padding: 40px;
+
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+
+            justify-content: space-between;
+
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        div {
+            display: flex;
+
+            height: 50px;
+
+            border-style: solid;
+        }
+
+        .block1 {
+            align-items:center;
+            justify-content: space-between;
+        }
+        
+        .block2 {
+            align-items:flex-start;
+            justify-content:flex-end;
+        }
+        
+        .block3 {
+            align-items:flex-end;
+            justify-content:flex-start;
+        }
+       
+        .block4 {
+            align-items:flex-end;
+            justify-content:space-around;    
+        }
+        
+        .block1 > span {
+            margin: 10px;
+        }
+        
+        .block2 > span {
+            margin-right:15px;
+        }
+        
+        .block3 > span {
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="block1">
+        <span>001</span>
+        <span>002</span>
+        <span>003</span>
+        <span>004</span>
+        <span>005</span>
+        <span>006</span>
+    </div>
+
+    <div class="block2">
+        <span>001</span>
+        <span>002</span>
+        <span>003</span>
+        <span>004</span>
+        <span>005</span>
+        <span>006</span>
+    </div>
+
+    <div class="block3">
+        <span>001</span>
+        <span>002</span>
+        <span>003</span>
+        <span>004</span>
+        <span>005</span>
+        <span>006</span>
+    </div>
+
+    <div class="block4">
+        <span>001</span>
+        <span>002</span>
+        <span>003</span>
+        <span>004</span>
+        <span>005</span>
+        <span>006</span>
+    </div>
+</body>
+</html>
